@@ -1,42 +1,57 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: snow;
+    /* background-color: snow; */
+    background-color:rgb(255, 249, 233);
+    
 }
 .main{
     width: 100%;
 }
+/* 
+Paleta
+ambar oscuro: #FFA000
+ambar claro: #FFECB3
+ambar: #FFC107
+
+textos: #212121
+accent (verde): #009688
+textos secondary: #757575
+
+*/
 h1,h2,h3{
-    /* font-family: 'Neuton', serif; */
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Girassol', cursive;
     font-weight: normal;
+    /* color: #00796B; */
+    color: #FFA000;
 }
 h4,h5,h6{
     font-family: 'Lora', serif;
 }
 h1{
-    font-size: 50px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 80px;
 }
 h2{
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 45px;
+    line-height: 65px;
 }
 h3{
-    font-size: 25px;
+    font-size: 30px;
 }
 h4{
     font-size: 30px;
 }
 p,li{
     font-family: 'Lora', serif;
+    color: #212121;
     /* font-family: sans-serif; */
     font-size: 20px;
     line-height: 30px;
 }
 a {
     /* text-decoration: none; */
-    color: black;
+    color: #009688;
     font-family: 'Lora', serif;
     font-size: 22px;
 }
@@ -47,38 +62,40 @@ section{
     padding: 0px 24px;
 }
 #hero{
-    /* width: 100%; */
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
     background-image: url("../resources/algunos_platos.jpg");
-    background-position: -210px;
+    background-position: -50px;
     background-size: cover;
-    height: 100vh;
+    height: 66vh;
     text-align: center;
+    border-top: 12px solid #FFA000;
 }
 .hero-logo{
-    padding: 32px;
+    background-color: #009688;
+    text-align: center;
 }
-.hero-logo img{
-    width: 100%;
+#logo-mallin{
+    padding: 55px;
 }
-.hero-text{
-    padding: 24px;
+#about{
+    text-align: center;
 }
 .btn{
     /* display: block; */
     /* align-self: center; */
+    text-decoration: none;
     padding: 16px 32px;
-    border: 1px solid;
-    border-radius: 4px;
+    /* border: 2px solid; */
+    background-color: #009688;
+    color: #ffffff;
+    /* border-radius: 4px; */
+    box-shadow: 8px 8px 0px 0px #FFA000;
 }
 .important{
     font-size: 22px;
     line-height: 35px;
+    color: #009688;
     font-style: italic;
 }
 .section-image--rounded{
     width: 100%;
-    border-radius: 8px;
 }
