@@ -3,13 +3,15 @@ body{
     padding: 0px;
     /* background-color: snow; */
     background-color:rgb(255, 249, 233);
-    
+    color: #212121;
 }
 .main{
     width: 100%;
 }
 /* 
-Paleta
+
+Colors
+
 ambar oscuro: #FFA000
 ambar claro: #FFECB3
 ambar: #FFC107
@@ -22,7 +24,6 @@ textos secondary: #757575
 h1,h2,h3{
     font-family: 'Girassol', cursive;
     font-weight: normal;
-    /* color: #00796B; */
     color: #FFA000;
 }
 h4,h5,h6{
@@ -31,6 +32,7 @@ h4,h5,h6{
 h1{
     font-size: 60px;
     line-height: 80px;
+    text-transform: uppercase;
 }
 h2{
     font-size: 45px;
@@ -42,9 +44,11 @@ h3{
 h4{
     font-size: 30px;
 }
+ul{
+    list-style-type: square;
+}
 p,li{
     font-family: 'Lora', serif;
-    color: #212121;
     /* font-family: sans-serif; */
     font-size: 20px;
     line-height: 30px;
@@ -55,40 +59,31 @@ a {
     font-family: 'Lora', serif;
     font-size: 22px;
 }
-figure{
-    margin: 0px;
-}
-section{
-    padding: 0px 24px;
-}
-#hero{
-    background-image: url("../resources/algunos_platos.jpg");
-    background-position: -50px;
-    background-size: cover;
-    height: 66vh;
-    text-align: center;
+.splash{
+    width: 100%;
     border-top: 12px solid #FFA000;
 }
-.hero-logo{
+.top-logo{
     background-color: #009688;
     text-align: center;
 }
-#logo-mallin{
+#top-logo-image{
     padding: 55px;
 }
 #about{
     text-align: center;
 }
+.section{
+    padding: 0px 24px 24px 24px;
+}
 .btn{
-    /* display: block; */
-    /* align-self: center; */
+    display: block;
     text-decoration: none;
     padding: 16px 32px;
-    /* border: 2px solid; */
     background-color: #009688;
     color: #ffffff;
-    /* border-radius: 4px; */
     box-shadow: 8px 8px 0px 0px #FFA000;
+    margin: 36px 0px;
 }
 .important{
     font-size: 22px;
