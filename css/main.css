@@ -67,19 +67,24 @@ a {
     border-top: 12px solid #FFA000;
 }
 .top-logo{
+    display: flex;
+    flex-flow: column;
     background-color: #009688;
-    text-align: center;
-}
-#top-logo-image{
-    width: 66%;
+    align-items: center;
     padding: 64px;
 }
-#about{
-    text-align: center;
-    /* padding: 0px 36px; */
+#slogan{
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
 }
 .section{
     padding: 0px 24px 24px 24px;
+}
+#about{
+    text-align: center;
+    padding: 24px;
 }
 .btn{
     display: block;
