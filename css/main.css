@@ -64,7 +64,7 @@ a {
 }
 .splash{
     width: 100%;
-    /* border-top: 12px solid #FFA000; */
+    border-top: 12px solid #FFA000;
 }
 .top-logo{
     background-color: #009688;
@@ -111,4 +111,7 @@ td {
     /* border: 1px solid #333; */
     min-width: 50px;
     padding: 4px;
+}
+table{
+    margin-bottom: 36px;
 }
