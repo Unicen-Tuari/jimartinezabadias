@@ -3,6 +3,9 @@ body{
     padding: 0px;
     background-color:rgb(255, 249, 233);
     color: #212121;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 27px;
 }
 .main{
     width: 100%;
@@ -27,6 +30,8 @@ h1,h2,h3{
 }
 h4,h5,h6{
     font-family: 'Lora', serif;
+    /* text-decoration: underline; */
+    color: #FFA000;
 }
 h1{
     font-size: 50px;
@@ -59,7 +64,7 @@ a {
 }
 .splash{
     width: 100%;
-    border-top: 12px solid #FFA000;
+    /* border-top: 12px solid #FFA000; */
 }
 .top-logo{
     background-color: #009688;
@@ -93,4 +98,17 @@ a {
 }
 .section-image--rounded{
     width: 100%;
+}
+.nombre-plato{
+    font-size: 30px;
+    line-height: 40px;
+}
+thead{
+    font-size: 18px;
+    text-align: left;
+}
+td {
+    /* border: 1px solid #333; */
+    min-width: 50px;
+    padding: 4px;
 }
