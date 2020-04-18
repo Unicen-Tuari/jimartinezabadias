@@ -85,9 +85,9 @@ a {
     display: block;
     text-decoration: none;
     padding: 16px 32px;
-    background-color: #009688;
+    background-color: #FFA000;
     color: #ffffff;
-    box-shadow: 8px 8px 0px 0px #FFA000;
+    /* box-shadow: 8px 8px 0px 0px #FFA000; */
     margin: 36px 0px;
 }
 .important{
