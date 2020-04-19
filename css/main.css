@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     background-color:rgb(255, 249, 233);
-    color: #212121;
+    color: #646363;
     font-family: 'Lora', serif;
     font-size: 18px;
     line-height: 27px;
@@ -26,17 +26,18 @@ textos secondary: #757575
 h1,h2,h3{
     font-family: 'Girassol', cursive;
     font-weight: normal;
-    color: #FFA000;
+    color: #164341;
+    text-transform: uppercase;
 }
 h4,h5,h6{
     font-family: 'Lora', serif;
     /* text-decoration: underline; */
-    color: #FFA000;
+    color: #164341;
+    /* text-transform: uppercase; */
 }
 h1{
     font-size: 50px;
     line-height: 80px;
-    text-transform: uppercase;
 }
 h2{
     font-size: 40px;
@@ -47,6 +48,7 @@ h3{
 }
 h4{
     font-size: 30px;
+    line-height: 45px;
 }
 ul{
     list-style-type: square;
@@ -58,18 +60,19 @@ p,li{
 }
 a {
     /* text-decoration: none; */
-    color: #009688;
+    color: #164341;
     font-family: 'Lora', serif;
-    font-size: 22px;
+    font-size: 26px;
+    line-height: 36px;
 }
 .splash{
     width: 100%;
-    border-top: 12px solid #FFA000;
+    border-top: 12px solid #FFC107;
 }
 .top-logo{
     display: flex;
     flex-flow: column;
-    background-color: #009688;
+    background-color: #164341;
     align-items: center;
     padding: 64px;
 }
@@ -77,28 +80,28 @@ a {
     font-family: 'Lora', serif;
     font-size: 17px;
     line-height: 30px;
-    color: #ffffff;
+    color: #FFC107;
 }
 .section{
     padding: 0px 24px 24px 24px;
+    text-align: center;
 }
 #about{
-    text-align: center;
     padding: 24px;
 }
 .btn{
     display: block;
     text-decoration: none;
-    padding: 16px 32px;
-    background-color: #FFA000;
-    color: #ffffff;
+    padding: 16px;
+    border: 2px solid #164341;
+    color: #164341;
     /* box-shadow: 8px 8px 0px 0px #FFA000; */
     margin: 36px 0px;
 }
 .important{
     font-size: 22px;
     line-height: 35px;
-    color: #009688;
+    color: #164341;
     font-style: italic;
 }
 .section-image--rounded{
@@ -107,16 +110,20 @@ a {
 .nombre-plato{
     font-size: 30px;
     line-height: 40px;
+    color: #164341;
+    border-bottom: 1px solid #FFC107;
 }
 thead{
     font-size: 18px;
     text-align: left;
 }
 td {
-    /* border: 1px solid #333; */
+    /* border: 1px solid #164341; */
+    
     min-width: 50px;
     padding: 4px;
 }
 table{
+    text-align: left;
     margin-bottom: 36px;
 }
