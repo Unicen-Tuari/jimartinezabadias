@@ -31,6 +31,7 @@ h1,h2,h3{
 }
 h4,h5,h6{
     font-family: 'Lora', serif;
+    font-weight: normal;
     /* text-decoration: underline; */
     color: #164341;
     /* text-transform: uppercase; */
@@ -43,12 +44,18 @@ h2{
     font-size: 40px;
     line-height: 65px;
 }
+h1::after{
+    content: "";
+    display: block;
+    margin: 0px 48px;
+    border: 0.5px solid #FFC107;
+}
 h3{
     font-size: 25px;
 }
 h4{
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 22px;
+    line-height: 30px;
 }
 ul{
     list-style-type: square;
@@ -58,11 +65,11 @@ p,li{
     font-size: 20px;
     line-height: 30px;
 }
-a {
+a{
     /* text-decoration: none; */
     color: #164341;
     font-family: 'Lora', serif;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 36px;
 }
 .splash{
@@ -93,8 +100,9 @@ a {
     display: block;
     text-decoration: none;
     padding: 16px;
-    border: 2px solid #164341;
-    color: #164341;
+    border: 1px solid #164341;
+    color: white;
+    background-color: #206360;
     /* box-shadow: 8px 8px 0px 0px #FFA000; */
     margin: 36px 0px;
 }
@@ -107,11 +115,17 @@ a {
 .section-image--rounded{
     width: 100%;
 }
-.nombre-plato{
-    font-size: 30px;
+.dish-name{
+    font-size: 28px;
     line-height: 40px;
     color: #164341;
-    border-bottom: 1px solid #FFC107;
+    /* border-bottom: 1px solid #FFC107; */
+}
+.dish-type-image{
+    width: 25px;
+}
+.dish-info{
+    padding-bottom: 24px;
 }
 thead{
     font-size: 18px;
@@ -121,9 +135,29 @@ td {
     /* border: 1px solid #164341; */
     
     min-width: 50px;
-    padding: 4px;
+    padding: 8px;
 }
 table{
     text-align: left;
     margin-bottom: 36px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+.form-section{
+    text-align: left;
+}
+.form-item input,textarea,select,label{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    padding: 8px;
+}
+.form-item input,textarea,select{
+    border: 1px solid #164341;
+}
+.form-btn{
+    font-size: 24px;
+    line-height: 36px;
 }
