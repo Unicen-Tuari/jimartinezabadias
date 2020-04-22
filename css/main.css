@@ -8,6 +8,7 @@ body{
     line-height: 27px;
 }
 .main{
+    padding-top: 144px;
     width: 100%;
 }
 
@@ -80,6 +81,7 @@ a{
 }
 li{
     margin: 4px 0px;
+    list-style-type: disc;
 }
 .splash{
     width: 100%;
@@ -178,3 +180,42 @@ table{
 .section-body{
     padding: 0px 16px;
 }
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    border: none;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.20);
+    background-color: #164341;
+}
+nav ul{
+    color: #FFC107;
+    /* list-style-type: none; */
+}
+nav li{
+    margin: 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-nav{
+    align-items: center;
+}
+.logo-navbar{
+    margin-left: 36px;
+    width: 80%;
+}
+.nav-links{
+    margin-right: 36px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #FFC107;
+}
+/* #slogan{
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    line-height: 30px;
+    color: #FFC107;
+} */
