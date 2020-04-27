@@ -190,10 +190,13 @@ nav{
 }
 nav ul{
     color: #FFC107;
-    /* list-style-type: none; */
 }
 nav li{
+    list-style-type: none;
     margin: 0;
+}
+nav a {
+    line-height: 20px;
 }
 .menu{
     display: flex;
@@ -203,11 +206,11 @@ nav li{
     align-items: center;
 }
 .logo-navbar{
-    margin-left: 36px;
+    margin-left: 44px;
     width: 80%;
 }
 .nav-links{
-    margin-right: 36px;
+    margin-right: 42px;
 }
 .nav-links a{
     text-decoration: none;
