@@ -198,7 +198,7 @@ nav a {
     line-height: 20px;
 }
 #nav-menu-button{
-    fill: #FFC107;
+    fill: #fcc82b;
 }
 /* .activo #nav-menu-button{
     fill: #FFC107;
@@ -210,8 +210,8 @@ nav a {
     border-radius: 8px;
 }
 .activo{
-    border: 1px solid #FFECB3; 
-    background-color: #113836;
+    border: 1px solid #fcc82b; 
+    background-color: #143a38;
 }
 .nav-links {
     display: none;
