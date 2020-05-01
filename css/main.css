@@ -8,7 +8,7 @@ body{
     line-height: 27px;
 }
 .main{
-    padding-top: 144px;
+    padding-top: 124px;
     width: 100%;
 }
 
@@ -105,7 +105,7 @@ li{
     text-align: center;
 }
 #about{
-    padding: 24px;
+    padding: 18px;
 }
 .btn{
     display: block;
