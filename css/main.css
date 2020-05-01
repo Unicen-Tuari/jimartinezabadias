@@ -206,11 +206,11 @@ nav a {
 .toggle-menu {
     font-size: 32px;
     padding: 8px 8px;
-    border: 1px solid #FFC107; 
+    /* border: 1px solid #FFC107;  */
     border-radius: 8px;
 }
 .activo{
-    border: 1px solid #fcc82b; 
+    /* border: 1px solid #fcc82b;  */
     background-color: #143a38;
 }
 .nav-links {
