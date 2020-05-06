@@ -62,7 +62,7 @@ h4{
 h6{
     margin:0;
     font-size: 20px;
-    line-height: 39px;
+    line-height: 26px;
 }
 ul{
     list-style-type: square;
@@ -176,10 +176,10 @@ table{
     font-size: 24px;
     line-height: 36px;
 }
-.servicio{
+/* .servicio{
     padding: 0px 24px 24px 24px;
     text-align: left;
-}
+} */
 .section-body{
     padding: 0px 36px 36px 36px;
 }
@@ -261,4 +261,8 @@ nav li{
 }
 .section-main-title{
     padding: 24px 0px;
+}
+.event-description{
+    text-align: left;
+    padding: 0px 12px;
 }
