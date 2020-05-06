@@ -4,23 +4,28 @@ function initMainPage() {
 
     const platos = [
         {
-            nombre : "nombre plato 1",
-            descripcion: "descripcion del plato 1"
+            nombre: "Sandwich de bondiola a la cerveza negra",
+            descripcion: "Con batatas fritas, ensalada de repollo, vinagreta de Dijon",
+            imagen: "images/sandwich_de_cerdo.jpg"
         },{
-            nombre : "nombre plato 2",
-            descripcion: "descripcion del plato 2"
+            nombre: "Goulash con Spatzle",
+            descripcion: "Estofado de carne a la paprika con ñoquis hungaros en manteca de hierbas",
+            imagen: "images/gulash.jpg"
         },{
-            nombre : "nombre plato 3",
-            descripcion: "descripcion del plato 3"
+            nombre: "Cremoso de limón",
+            descripcion: "Con merengue flambeado, crocante de pistachos, ganache de chocolate blanco",
+            imagen: "images/cremoso_de_limon.jpg"
         }
     ];
 
     const nombre = document.querySelector('#nombre-plato-dia');
     const descripcion = document.querySelector('#descripcion-plato-dia');
+    const imagen = document.querySelector('#img-plato-dia');
     const plato = platos[Math.floor(Math.random() * platos.length)];
 
     nombre.innerHTML = plato.nombre;
     descripcion.innerHTML = plato.descripcion;
+    imagen.src = plato.imagen;
 
 }
 
