@@ -116,14 +116,14 @@ li{
     /* color: #fff9e9; */
     border-radius: 8px;
     /* color: white; */
-    /* background-color: rgb(252, 214, 102); */
+    background-color: #fff9e9;
     box-shadow: 2px 2px 0px 0px #FFC107;
     margin: 16px 0px;
     text-align: center;
 }
 .important{
-    font-size: 22px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 28px;
     color: #164341;
     font-style: italic;
 }
@@ -165,7 +165,7 @@ table{
     text-align: left;
 }
 .form-item input,textarea,select,label{
-    font-family: 'Lora', serif;
+    /* font-family: 'Lora', serif; */
     font-size: 18px;
     padding: 8px;
 }
