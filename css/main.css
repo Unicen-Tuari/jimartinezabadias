@@ -4,11 +4,11 @@ body{
     background-color:#fff9e9;
     color: #646363;
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 15px;
+    line-height: 21px;
 }
 .main{
-    padding-top: 137px;
+    padding-top: 94px;
     width: 100%;
 }
 
@@ -67,9 +67,9 @@ h6{
 ul{
     list-style-type: square;
 }
-p,li{
+/* p,li{
     line-height: 27px;
-}
+} */
 a{
     text-decoration: none;
     color: inherit;
@@ -208,7 +208,7 @@ nav li{
 }
 .toggle-menu {
     font-size: 32px;
-    padding: 8px 8px;
+    padding: 8px 6px;
     /* border: 1px solid #143a38; */
     border-radius: 8px;
     background-color: #1b4d4a;
@@ -242,14 +242,14 @@ nav li{
 .menu{
     display: flex;
     justify-content: space-between;
-    margin: 30px 32px;
+    margin: 18px 32px;
 }
 .menu-nav{
     align-items: center;
 }
 .logo-navbar{
     /* margin-left: 4px; */
-    width: 170px;
+    width: 128px;
 }
 .nav-links a{
     text-decoration: none;
