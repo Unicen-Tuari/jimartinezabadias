@@ -118,7 +118,7 @@ li{
     /* color: white; */
     background-color: #fff9e9;
     box-shadow: 2px 2px 0px 0px #FFC107;
-    margin: 16px 0px;
+    margin-top: 16px;
     text-align: center;
 }
 .important{
@@ -131,8 +131,8 @@ li{
     width: 100%;
 }
 .dish-name{
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 33px;
     color: #164341;
     /* border-bottom: 1px solid #FFC107; */
 }
@@ -265,4 +265,14 @@ nav li{
 .event-description{
     text-align: left;
     padding: 0px 12px;
+}
+.table-item{
+    color: #164341;
+    /* font-size: 16px; */
+}
+td{
+    /* content: ""; */
+    /* display: block;
+    margin: 0px 56px; */
+    /* border-bottom: 0.5px solid #FFC107; */
 }
