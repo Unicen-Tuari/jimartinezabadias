@@ -171,6 +171,7 @@ table{
 }
 .form-item input,textarea,select{
     border: 1px solid #164341;
+    border-radius: 4px;
 }
 .form-btn{
     font-size: 24px;
