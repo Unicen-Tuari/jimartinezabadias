@@ -1,19 +1,19 @@
 <?php
 
-// require_once('libs/Smarty.class.php');
+require_once('libs/smarty/Smarty.class.php');
 
 class FrontView{
 
-    // private $smarty;
+    private $smarty;
 
     function __construct(){
-        // $this->smarty = new Smarty;
+        $this->smarty = new Smarty;
     }
 
     function showIndex(){
         // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/index.html";
+        $this->smarty->display('src/views/templates/index.tpl');
+        // echo include_once "src/views/index.html";
     }
 
     function showMenu(){
