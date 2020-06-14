@@ -13,8 +13,10 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="admin">Admin</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #164341;">
+        <a class="navbar-brand" href="admin">
+            <img src="images/logo_el_mallin_inv.png" style="padding:8px;" width="130" alt="" loading="lazy">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
