@@ -8,7 +8,8 @@ class ConfigApp{
         'menu' => 'FrontController#showMenu',
         'eventos' => 'FrontController#showEventos',
         'nosotros' => 'FrontController#showNosotros',
-        'contacto' => 'FrontController#showContacto'
+        'contacto' => 'FrontController#showContacto',
+        'admin' => 'AdminController#showIndex'
     ];
 }
 ?>

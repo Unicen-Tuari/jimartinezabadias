@@ -2,7 +2,7 @@
 
 require_once('libs/smarty/Smarty.class.php');
 
-class FrontView{
+class AdminView{
 
     private $smarty;
 
@@ -12,7 +12,7 @@ class FrontView{
 
     function showIndex(){
         // $this->smarty->assign('task',$task);
-        $this->smarty->display('src/views/templates/frontIndex.tpl');
+        $this->smarty->display('src/views/templates/adminIndex.tpl');
         // echo include_once "src/views/index.html";
     }
 
