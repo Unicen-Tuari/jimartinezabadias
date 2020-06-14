@@ -1,4 +1,4 @@
-{include file="src/views/templates/header.tpl"}
+{include file="src/views/templates/frontHeader.tpl"}
 
     <div class="main">
 
@@ -104,4 +104,4 @@
 
     </div>
 
-{include file="src/views/templates/footer.tpl"}
+{include file="src/views/templates/frontFooter.tpl"}
