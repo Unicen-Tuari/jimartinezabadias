@@ -12,29 +12,14 @@ class AdminController{
         // $this->model = new TaskModel();
     }
 
-    function showIndex($params = null){
+    function showIndex(){
         // echo include_once "src/views/index.html";
-        $this->view->showIndex();
+        $this->view->Index();
     }
 
-    function showMenu($params = null){
+    function showDishes(){
         // echo include_once "src/views/menu.html";
-        $this->view->showMenu();
-    }
-
-    function showEventos($params = null){
-        // echo include_once "src/views/menu.html";
-        $this->view->showEventos();
-    }
-
-    function showNosotros($params = null){
-        // echo include_once "src/views/menu.html";
-        $this->view->showNosotros();
-    }
-
-    function showContacto($params = null){
-        // echo include_once "src/views/menu.html";
-        $this->view->showContacto();
+        $this->view->Dishes();
     }
 
 }

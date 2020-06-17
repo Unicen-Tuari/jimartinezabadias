@@ -10,31 +10,31 @@ class FrontView{
         $this->smarty = new Smarty;
     }
 
-    function showIndex(){
+    function Index(){
         // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/frontIndex.tpl');
         // echo include_once "src/views/index.html";
     }
 
-    function showMenu(){
+    function Menu(){
         // $this->smarty->assign('task',$task);
         // $this->smarty->display('templates/task.tpl');
         echo include_once "src/views/menu.html";
     }
 
-    function showEventos(){
+    function Events(){
         // $this->smarty->assign('task',$task);
         // $this->smarty->display('templates/task.tpl');
         echo include_once "src/views/eventos.html";
     }
     
-    function showNosotros(){
+    function About(){
         // $this->smarty->assign('task',$task);
         // $this->smarty->display('templates/task.tpl');
         echo include_once "src/views/nosotros.html";
     }
     
-    function showContacto(){
+    function Contact(){
         // $this->smarty->assign('task',$task);
         // $this->smarty->display('templates/task.tpl');
         echo include_once "src/views/contacto.html";

@@ -10,35 +10,18 @@ class AdminView{
         $this->smarty = new Smarty;
     }
 
-    function showIndex(){
+    function Index(){
         // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/adminIndex.tpl');
         // echo include_once "src/views/index.html";
     }
 
-    function showMenu(){
+    function Dishes(){
         // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/menu.html";
+        $this->smarty->display('src/views/templates/adminDishes.tpl');
+        // echo include_once "src/views/templates/adminPlatos.tpl";
     }
 
-    function showEventos(){
-        // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/eventos.html";
-    }
-    
-    function showNosotros(){
-        // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/nosotros.html";
-    }
-    
-    function showContacto(){
-        // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/contacto.html";
-    }
 
 }
 

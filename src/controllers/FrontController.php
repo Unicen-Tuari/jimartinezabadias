@@ -12,29 +12,29 @@ class FrontController{
         // $this->model = new TaskModel();
     }
 
-    function showIndex($params = null){
+    function showIndex(){
         // echo include_once "src/views/index.html";
-        $this->view->showIndex();
+        $this->view->Index();
     }
 
-    function showMenu($params = null){
+    function showMenu(){
         // echo include_once "src/views/menu.html";
-        $this->view->showMenu();
+        $this->view->Menu();
     }
 
-    function showEventos($params = null){
+    function showEvents(){
         // echo include_once "src/views/menu.html";
-        $this->view->showEventos();
+        $this->view->Events();
     }
 
-    function showNosotros($params = null){
+    function showAbout(){
         // echo include_once "src/views/menu.html";
-        $this->view->showNosotros();
+        $this->view->About();
     }
 
-    function showContacto($params = null){
+    function showContact(){
         // echo include_once "src/views/menu.html";
-        $this->view->showContacto();
+        $this->view->Contact();
     }
 
 }

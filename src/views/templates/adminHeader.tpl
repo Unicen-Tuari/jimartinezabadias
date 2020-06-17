@@ -26,7 +26,7 @@
                     <a class="nav-link" href="admin">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Platos</a>
+                    <a class="nav-link" href="admin/platos">Platos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Categorias</a>

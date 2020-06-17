@@ -6,10 +6,12 @@ class ConfigApp{
     public static $ACTIONS = [
         '' => 'FrontController#showIndex',
         'menu' => 'FrontController#showMenu',
-        'eventos' => 'FrontController#showEventos',
-        'nosotros' => 'FrontController#showNosotros',
-        'contacto' => 'FrontController#showContacto',
-        'admin' => 'AdminController#showIndex'
+        'eventos' => 'FrontController#showEvents',
+        'nosotros' => 'FrontController#showAbout',
+        'contacto' => 'FrontController#showContact',
+        'admin' => 'AdminController#showIndex',
+        'admin/platos' => 'AdminController#showDishes',
+        'admin/plato' => 'AdminController#showDish'
     ];
 }
 ?>
