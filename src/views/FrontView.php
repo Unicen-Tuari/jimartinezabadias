@@ -13,31 +13,31 @@ class FrontView{
     function Index(){
         // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/frontIndex.tpl');
-        // echo include_once "src/views/index.html";
+
     }
 
     function Menu(){
         // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/menu.html";
+        $this->smarty->display('src/views/templates/frontMenu.tpl');
+
     }
 
     function Events(){
         // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/eventos.html";
+        $this->smarty->display('src/views/templates/frontEvents.tpl');
+
     }
     
     function About(){
         // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/nosotros.html";
+        $this->smarty->display('src/views/templates/frontAbout.tpl');
+        
     }
     
     function Contact(){
         // $this->smarty->assign('task',$task);
-        // $this->smarty->display('templates/task.tpl');
-        echo include_once "src/views/contacto.html";
+        $this->smarty->display('src/views/templates/frontContact.tpl');
+
     }
 
 }

@@ -4,12 +4,12 @@
 
         <section class="section">
             
-            <a href="menu.html">
+            <a href="menu">
                 <img class="splash" src="images/algunos_platos.jpg" alt="Platos y cerveza">
             </a>
 
             <div class="section-body">
-                <a href="menu.html">
+                <a href="menu">
                     <h2>
                         Cocina de montaña
                     </h2>
@@ -19,7 +19,7 @@
                     Confiamos en productores locales para ofrecer una cocina auténtica y comprometida con la región.
                 </p>
             
-                <a class="btn" href="menu.html">Menú</a>
+                <a class="btn" href="menu">Menú</a>
             </div>
             
 
@@ -39,10 +39,10 @@
         </section>
 
         <section class="section">
-            <a href="eventos.html">
+            <a href="eventos">
                 <img class="splash" src="images/noches_de_tango.jpg" class="section-image--rounded" alt="">
                 <div class="section-body">
-                    <a href="eventos.html">
+                    <a href="eventos">
                         <h2>
                             Eventos memorables
                         </h2>
@@ -50,7 +50,7 @@
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, ipsam vel.
                     </p>
-                    <a class="btn" href="eventos.html">Eventos</a>
+                    <a class="btn" href="eventos">Eventos</a>
                 </div>
             </a>
         </section>
@@ -84,7 +84,7 @@
                 <p>
                     Whatsapp: 549294 461-6099
                 </p>
-                <a class="btn" href="contacto.html">Reservar</a>
+                <a class="btn" href="contacto">Reservar</a>
 
             </div>
 
@@ -103,5 +103,7 @@
         </section>
 
     </div>
+
+    <script src="js/main.js"></script>
 
 {include file="src/views/templates/frontFooter.tpl"}
