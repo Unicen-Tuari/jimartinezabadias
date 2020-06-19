@@ -1,5 +1,7 @@
 <?php
 
+include_once "database/ConfigDB.php";
+
 define('BASE_URL','//'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']) . '/');
 
 class ConfigApp{

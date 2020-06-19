@@ -1,0 +1,11 @@
+<?php
+
+# poner los datos de conexion y borrar el .default
+
+# el nombre de la db es web1_restaurante
+# se puede cambiar en el construct de AdminModel
+
+define('DB_USER','root');
+define('DB_PASS','');
+
+?>
