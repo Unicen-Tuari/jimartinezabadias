@@ -13,13 +13,27 @@ class AdminView{
     function Index(){
         // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/adminIndex.tpl');
-        // echo include_once "src/views/index.html";
     }
 
-    function Dishes(){
-        // $this->smarty->assign('task',$task);
+    function Dishes($dishes){
+        $this->smarty->assign('dishes',$dishes);
         $this->smarty->display('src/views/templates/adminDishes.tpl');
-        // echo include_once "src/views/templates/adminPlatos.tpl";
+    }
+
+    function Dish($dish){
+        $this->smarty->assign('dish',$dish);
+        $this->smarty->display('src/views/templates/adminDish.tpl');
+    }
+
+    function formNewDish($categories){
+        $this->smarty->assign('categories',$categories);
+        $this->smarty->display('src/views/templates/formNewDish.tpl');
+    }
+    
+    function formEditDish($dish,$categories){
+        $this->smarty->assign('dish',$dish);
+        $this->smarty->assign('categories',$categories);
+        $this->smarty->display('src/views/templates/formEditDish.tpl');
     }
 
 

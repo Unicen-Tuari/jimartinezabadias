@@ -36,8 +36,8 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     $methodName = $controllerMetodo[1];
     
     if(isset($params) && $params != null){
-        echo $controllerMetodo[0] . " " . $methodName . " "; 
-        var_dump($params);
+        // echo $controllerMetodo[0] . " " . $methodName . " "; 
+        // var_dump($params);
         echo $controller->$methodName($params);
     }else{
         echo $controller->$methodName();

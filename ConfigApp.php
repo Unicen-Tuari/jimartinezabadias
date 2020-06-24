@@ -15,7 +15,12 @@ class ConfigApp{
         'contacto' => 'FrontController#showContact',
         'admin' => 'AdminController#showIndex',
         'admin/platos' => 'AdminController#showDishes',
-        'admin/plato' => 'AdminController#showDish'
+        'admin/plato' => 'AdminController#showDish',
+        'admin/nuevo_plato' => 'AdminController#formNewDish',
+        'admin/agregar_plato' => 'AdminController#insertDish',
+        'admin/editar_plato' => 'AdminController#editDish',
+        'admin/guardar_plato' => 'AdminController#saveDish',
+        'admin/borrar_plato' => 'AdminController#deleteDish'
     ];
 }
 ?>
