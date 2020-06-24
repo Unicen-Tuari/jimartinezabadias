@@ -12,7 +12,7 @@ class AdminModel {
         $sentence = $this->db->prepare(
             "select d.*,c.name category_name
             from dish d
-                natural join category c");
+                join category c on (d.cod_category = c.cod_category)");
         $sentence->execute();
         return $sentence->fetchAll(PDO::FETCH_ASSOC);
     }
@@ -21,7 +21,7 @@ class AdminModel {
         $sentence = $this->db->prepare(
             "select d.*,c.name category_name
             from dish d
-                natural join category c
+                join category c on (d.cod_category = c.cod_category)
             where (d.id_dish,d.cod_category) = (?,?)");
         $sentence->execute([$id_dish,$cod_category]);
         return $sentence->fetch(PDO::FETCH_ASSOC);
@@ -64,12 +64,16 @@ class AdminModel {
 
     function Categories(){
         $sentence = $this->db->prepare(
-            "select c.*,count(*) total_dishes
-            from category c
-                natural join dish d
-            group by c.cod_category");
+            "select * from category c");
         $sentence->execute();
         return $sentence->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    function insertCategory($cod_category, $category_name, $description){
+        $sentence = $this->db->prepare(
+            "insert into category(cod_category, name, description)
+            values (?,?,?)");
+        $sentence->execute([$cod_category, $category_name, $description]);
     }
 
 }

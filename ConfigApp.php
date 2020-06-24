@@ -22,6 +22,8 @@ class ConfigApp{
         'admin/guardar_plato' => 'AdminController#saveDish',
         'admin/borrar_plato' => 'AdminController#deleteDish',
         'admin/categorias' => 'AdminController#showCategories',
+        'admin/nueva_categoria' => 'AdminController#formNewCategory',
+        'admin/agregar_categoria' => 'AdminController#insertCategory',
     ];
 }
 ?>

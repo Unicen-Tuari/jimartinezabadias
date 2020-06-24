@@ -75,6 +75,19 @@ class AdminController{
         $this->view->Categories($categories);
     }
 
+    function formNewCategory(){
+        $categories = $this->model->Categories();
+        $this->view->formNewCategory($categories);
+    }
+    
+    function insertCategory(){
+        $this->model->insertCategory(
+            $_GET["cod_category"],
+            $_GET["category_name"],
+            $_GET["description"]);
+        header("Location: categorias");
+    }
+
     // Helpers
     private function splitDishId($dish_url){
         return explode('_',$dish_url);

@@ -19,6 +19,7 @@
                         <tr>
                             <th scope="col">Código</th>
                             <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,8 +30,8 @@
                                 <a href="admin/categoria/{$category['cod_category']}">
                                     {$category['name']}
                                 </a>
-                                <span class="badge badge-primary">{$category['total_dishes']}</span>
                             </td>
+                            <td>{$category['desctription']}</td>
                         </tr>
                         {/foreach}
                     </tbody>
