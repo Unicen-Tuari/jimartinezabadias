@@ -20,7 +20,8 @@ class ConfigApp{
         'admin/agregar_plato' => 'AdminController#insertDish',
         'admin/editar_plato' => 'AdminController#editDish',
         'admin/guardar_plato' => 'AdminController#saveDish',
-        'admin/borrar_plato' => 'AdminController#deleteDish'
+        'admin/borrar_plato' => 'AdminController#deleteDish',
+        'admin/categorias' => 'AdminController#showCategories',
     ];
 }
 ?>

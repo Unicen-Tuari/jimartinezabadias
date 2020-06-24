@@ -64,8 +64,10 @@ class AdminModel {
 
     function Categories(){
         $sentence = $this->db->prepare(
-            "select *
-            from category");
+            "select c.*,count(*) total_dishes
+            from category c
+                natural join dish d
+            group by c.cod_category");
         $sentence->execute();
         return $sentence->fetchAll(PDO::FETCH_ASSOC);
     }

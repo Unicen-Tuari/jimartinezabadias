@@ -70,6 +70,11 @@ class AdminController{
         header("Location: ../platos");
     }
 
+    function showCategories(){
+        $categories = $this->model->Categories();
+        $this->view->Categories($categories);
+    }
+
     // Helpers
     private function splitDishId($dish_url){
         return explode('_',$dish_url);

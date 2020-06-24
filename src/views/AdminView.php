@@ -11,7 +11,6 @@ class AdminView{
     }
 
     function Index(){
-        // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/adminIndex.tpl');
     }
 
@@ -36,6 +35,10 @@ class AdminView{
         $this->smarty->display('src/views/templates/formEditDish.tpl');
     }
 
+    function Categories($categories){
+        $this->smarty->assign('categories',$categories);
+        $this->smarty->display('src/views/templates/adminCategories.tpl');
+    }
 
 }
 
