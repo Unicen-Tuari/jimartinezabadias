@@ -17,7 +17,6 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Código</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Descripción</th>
                         </tr>
@@ -25,13 +24,12 @@
                     <tbody>
                         {foreach from=$categories item=category}
                         <tr>
-                            <td>{$category['cod_category']}</td>
                             <td>
-                                <a href="admin/categoria/{$category['cod_category']}">
+                                <a href="admin/categoria/{$category['id_category']}">
                                     {$category['name']}
                                 </a>
                             </td>
-                            <td>{$category['desctription']}</td>
+                            <td>{$category['description']}</td>
                         </tr>
                         {/foreach}
                     </tbody>

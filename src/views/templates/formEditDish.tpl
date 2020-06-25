@@ -14,7 +14,7 @@
             <form action="admin/guardar_plato" method="GET">
 
                  <input type="hidden" id="id_dish" name="id_dish" value="{$dish['id_dish']}">
-                 <input type="hidden" id="cod_category" name="cod_category" value="{$dish['cod_category']}">
+                 <input type="hidden" id="id_category" name="id_category" value="{$dish['id_category']}">
 
                 <div class="form-group">
                     <label for="dish_name">Nombre</label>
@@ -27,11 +27,11 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="new_cod_category">Categoría</label>
-                            <select class="custom-select" id="new_cod_category" name="new_cod_category">
+                            <label for="new_id_category">Categoría</label>
+                            <select class="custom-select" id="new_id_category" name="new_id_category">
                                 {foreach from=$categories item=category}
-                                    <option value="{$category['cod_category']}"
-                                        {if $category['cod_category'] eq $dish['cod_category']}
+                                    <option value="{$category['id_category']}"
+                                        {if $category['id_category'] eq $dish['id_category']}
                                             selected
                                         {/if}
                                         >{$category['name']}</option>
@@ -74,7 +74,7 @@
                 
                 <div class="form-group py-1">
                     <input class="btn btn-primary" type="submit" value="Guardar">
-                    <a class="btn btn-secondary" href="admin/plato/{$dish['cod_category']}_{$dish['id_dish']}">Cancelar</a>
+                    <a class="btn btn-secondary" href="admin/plato/{$dish['id_dish']}">Cancelar</a>
                 </div>
 
             </form>

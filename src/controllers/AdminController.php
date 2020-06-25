@@ -14,19 +14,17 @@ class AdminController{
     }
 
     function showIndex(){
-        // echo include_once "src/views/index.html";
         $this->view->Index();
     }
 
     function showDishes(){
         $dishes = $this->model->Dishes();
-        // print_r($dishes);
         $this->view->Dishes($dishes);
     }
 
     function showDish($params){
-        [$cod_category,$id_dish] = $this->splitDishId($params[0]);
-        $dish = $this->model->Dish($id_dish,$cod_category);
+        $id_dish = $params[0];
+        $dish = $this->model->Dish($id_dish);
         $this->view->Dish($dish);
     }
 
@@ -36,15 +34,15 @@ class AdminController{
     }
 
     function editDish($params){
-        [$cod_category,$id_dish] = $this->splitDishId($params[0]);
-        $dish = $this->model->Dish($id_dish,$cod_category);
+        $id_dish = $params[0];
+        $dish = $this->model->Dish($id_dish);
         $categories = $this->model->Categories();
         $this->view->formEditDish($dish,$categories);
     }
 
     function insertDish(){
         $this->model->insertDish(
-            $_GET["cod_category"],
+            $_GET["id_category"],
             $_GET["dish_name"],
             $_GET["description"], 
             $_GET["price"],
@@ -55,8 +53,8 @@ class AdminController{
     function saveDish(){
         $this->model->updateDish(
             $_GET["id_dish"],
-            $_GET["cod_category"],
-            $_GET["new_cod_category"],
+            $_GET["id_category"],
+            $_GET["new_id_category"],
             $_GET["dish_name"],
             $_GET["description"], 
             $_GET["price"],
@@ -65,8 +63,8 @@ class AdminController{
     }
 
     function deleteDish($params){
-        [$cod_category,$id_dish] = $this->splitDishId($params[0]);
-        $this->model->deleteDish($id_dish,$cod_category);
+        $id_dish = $params[0];
+        $this->model->deleteDish($id_dish);
         header("Location: ../platos");
     }
 
@@ -76,27 +74,25 @@ class AdminController{
     }
 
     function formNewCategory(){
-        $categories = $this->model->Categories();
         $this->view->formNewCategory($categories);
     }
     
     function insertCategory(){
         $this->model->insertCategory(
-            $_GET["cod_category"],
             $_GET["category_name"],
             $_GET["description"]);
         header("Location: categorias");
     }
 
     function showCategory($params){
-        $cod_category = $params[0];
-        $category = $this->model->Category($cod_category);
+        $id_category = $params[0];
+        $category = $this->model->Category($id_category);
         $this->view->Category($category);
     }
 
     function editCategory($params){
         $cod_category = $params[0];
-        $category = $this->model->Category($cod_category);
+        $category = $this->model->Category($id_category);
         $this->view->formEditCategory($category);
     }
 

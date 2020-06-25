@@ -19,20 +19,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="cod_category">Código</label>
-                    <input type="text" class="form-control" id="cod_category" name="cod_category" 
-                        placeholder="Código" maxlength="2" minlength="2" size="2" required
-                        aria-describedby="cod_categoryHelp">
-                    <small id="cod_categoryHelp" class="form-text text-muted">
-                        Debe ser de 2 caracteres
-                    </small>
-                </div>
-
-                <div class="form-group">
                     <label for="description">Descripción</label>
                     <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                 </div>
-
 
                 <hr>
                 

@@ -27,7 +27,7 @@
                         <tr>
                             <td>{$dish['category_name']}</td>
                             <td>
-                                <a href="admin/plato/{$dish['cod_category']}_{$dish['id_dish']}">
+                                <a href="admin/plato/{$dish['id_dish']}">
                                     {$dish['dish_name']}
                                 </a>
                                 {if $dish['in_menu'] eq 'P'}

@@ -12,54 +12,54 @@ class AdminModel {
         $sentence = $this->db->prepare(
             "select d.*,c.name category_name
             from dish d
-                join category c on (d.cod_category = c.cod_category)");
+                join category c on (d.id_category = c.id_category)");
         $sentence->execute();
         return $sentence->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    function Dish($id_dish,$cod_category){
+    function Dish($id_dish){
         $sentence = $this->db->prepare(
             "select d.*,c.name category_name
             from dish d
-                join category c on (d.cod_category = c.cod_category)
-            where (d.id_dish,d.cod_category) = (?,?)");
-        $sentence->execute([$id_dish,$cod_category]);
+                join category c on (d.id_category = c.id_category)
+            where d.id_dish = ?");
+        $sentence->execute([$id_dish]);
         return $sentence->fetch(PDO::FETCH_ASSOC);
     }
 
-    function insertDish($cod_category, $dish_name, $description, $price, $in_menu){
+    function insertDish($id_category,$dish_name, $description, $price, $in_menu){
         $sentence = $this->db->prepare(
-            "insert into dish(cod_category, dish_name, description, price, in_menu)
+            "insert into dish(id_category,dish_name, description, price, in_menu)
             values (?,?,?,?,?)");
-        $sentence->execute([$cod_category, $dish_name, $description, $price, $in_menu]);
+        $sentence->execute([$id_category,$dish_name, $description, $price, $in_menu]);
     }
     
-    function updateDish($id_dish,$cod_category, $new_cod_category, $dish_name, $description, $price, $in_menu){
+    function updateDish($id_dish,$id_category, $new_id_category, $dish_name, $description, $price, $in_menu){
         $sentence = $this->db->prepare(
             "update dish
             set
-                cod_category = ?,
+                id_category = ?,
                 dish_name = ?,
                 description = ?,
                 price = ?,
                 in_menu = ?
             where
                 id_dish = ?
-                and cod_category=?");
+                and id_category=?");
         $sentence->execute([
-            $new_cod_category, 
+            $new_id_category, 
             $dish_name, 
             $description, 
             $price, 
             $in_menu,
             $id_dish,
-            $cod_category]);
+            $id_category]);
     }
 
-    function deleteDish($id_dish,$cod_category){
+    function deleteDish($id_dish){
         $sentence = $this->db->prepare(
-            "delete from dish where (id_dish,cod_category) = (?,?)");
-        $sentence->execute([$id_dish,$cod_category]);
+            "delete from dish where id_dish = ?");
+        $sentence->execute([$id_dish]);
     }
 
     function Categories(){
@@ -69,19 +69,19 @@ class AdminModel {
         return $sentence->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    function insertCategory($cod_category, $category_name, $description){
+    function insertCategory($category_name, $description){
         $sentence = $this->db->prepare(
-            "insert into category(cod_category, name, description)
-            values (?,?,?)");
-        $sentence->execute([$cod_category, $category_name, $description]);
+            "insert into category(name, description)
+            values (?,?)");
+        $sentence->execute([$category_name, $description]);
     }
 
-    function Category($cod_category){
+    function Category($id_category){
         $sentence = $this->db->prepare(
             "select c.*
             from category c
-            where c.cod_category = ?");
-        $sentence->execute([$cod_category]);
+            where c.id_category = ?");
+        $sentence->execute([$id_category]);
         return $sentence->fetch(PDO::FETCH_ASSOC);
     }
 

@@ -23,10 +23,10 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="cod_category">Categoría</label>
-                            <select class="custom-select" id="cod_category" name="cod_category">
+                            <label for="id_category">Categoría</label>
+                            <select class="custom-select" id="id_category" name="id_category">
                                 {foreach from=$categories item=category}
-                                    <option value="{$category['cod_category']}">{$category['name']}</option>
+                                    <option value="{$category['id_category']}">{$category['name']}</option>
                                 {/foreach}
                             </select>
                         </div>

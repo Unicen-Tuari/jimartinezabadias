@@ -39,9 +39,9 @@
     <div class="row">
         <div class="col">
             <a class="btn btn-primary" 
-                href="admin/editar_plato/{$dish['cod_category']}_{$dish['id_dish']}" role="button">Editar</a>
+                href="admin/editar_plato/{$dish['id_dish']}" role="button">Editar</a>
             <a class="btn btn-danger"
-                href="admin/borrar_plato/{$dish['cod_category']}_{$dish['id_dish']}" role="button">Borrar</a>
+                href="admin/borrar_plato/{$dish['id_dish']}" role="button">Borrar</a>
             <a class="btn btn-secondary" href="admin/platos">Volver</a>
         </div>
     </div>
