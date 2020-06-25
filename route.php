@@ -13,20 +13,19 @@ function parceURL($url){
     return $arrayReturn;
 }
 
-//arreglo de 2 posiciones
 $urlData = parceURL($_GET[ConfigApp::$ACTION]);
 
 $actionName = $urlData[ConfigApp::$ACTION];
 
+
 if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     
     $params = $urlData[ConfigApp::$PARAMS];
-    
+    $accion = ConfigApp::$ACTIONS[$actionName];
+
     if(array_key_exists($actionName . "/" . $params[0], ConfigApp::$ACTIONS)){
         $accion = ConfigApp::$ACTIONS[$actionName . "/" . $params[0]];
         $params = array_slice($params,1);
-    } else {
-        $accion = ConfigApp::$ACTIONS[$actionName];
     }
 
     $controllerMetodo = explode('#', $accion);
@@ -43,7 +42,6 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
         echo $controller->$methodName();
     }
 }else{
-    // echo $controller->tasks();
     echo "controller no definido";
 }
 

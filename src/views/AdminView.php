@@ -45,6 +45,16 @@ class AdminView{
         $this->smarty->display('src/views/templates/formNewCategory.tpl');
     }
 
+    function Category($category){
+        $this->smarty->assign('category',$category);
+        $this->smarty->display('src/views/templates/adminCategory.tpl');
+    }
+
+    function formEditCategory($category){
+        $this->smarty->assign('category',$category);
+        $this->smarty->display('src/views/templates/formEditCategory.tpl');
+    }
+
 }
 
 ?>

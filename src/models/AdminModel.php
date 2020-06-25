@@ -76,5 +76,14 @@ class AdminModel {
         $sentence->execute([$cod_category, $category_name, $description]);
     }
 
+    function Category($cod_category){
+        $sentence = $this->db->prepare(
+            "select c.*
+            from category c
+            where c.cod_category = ?");
+        $sentence->execute([$cod_category]);
+        return $sentence->fetch(PDO::FETCH_ASSOC);
+    }
+
 }
 ?>

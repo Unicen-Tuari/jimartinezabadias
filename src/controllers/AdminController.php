@@ -88,6 +88,18 @@ class AdminController{
         header("Location: categorias");
     }
 
+    function showCategory($params){
+        $cod_category = $params[0];
+        $category = $this->model->Category($cod_category);
+        $this->view->Category($category);
+    }
+
+    function editCategory($params){
+        $cod_category = $params[0];
+        $category = $this->model->Category($cod_category);
+        $this->view->formEditCategory($category);
+    }
+
     // Helpers
     private function splitDishId($dish_url){
         return explode('_',$dish_url);

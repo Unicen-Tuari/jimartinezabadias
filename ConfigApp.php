@@ -24,6 +24,8 @@ class ConfigApp{
         'admin/categorias' => 'AdminController#showCategories',
         'admin/nueva_categoria' => 'AdminController#formNewCategory',
         'admin/agregar_categoria' => 'AdminController#insertCategory',
+        'admin/categoria' => 'AdminController#showCategory',
+        'admin/editar_categoria' => 'AdminController#editCategory'
     ];
 }
 ?>
