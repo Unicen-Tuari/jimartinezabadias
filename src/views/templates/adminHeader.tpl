@@ -13,10 +13,10 @@
     <base href="{BASE_URL}">
   </head>
 
-  <body>
+  <body style="background-color: #f5f5f5;">
 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #164341;">
-        <a class="navbar-brand" href="admin">
+        <a class="navbar-brand" href="admin_menu">
             <img src="images/logo_el_mallin_inv.png" style="padding:8px;" width="130" alt="" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,14 +24,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="admin">Menú <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin_menu">Menú <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin/platos">Platos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="admin/categorias">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user_logout">Cerrar Sesion</a>
                 </li>
             </ul>
         </div>

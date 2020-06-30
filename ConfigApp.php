@@ -13,7 +13,8 @@ class ConfigApp{
         'eventos' => 'FrontController#showEvents',
         'nosotros' => 'FrontController#showAbout',
         'contacto' => 'FrontController#showContact',
-        'admin' => 'AdminController#showIndex',
+        'admin' => 'UserController#login',
+        'admin_menu' => 'AdminController#showIndex',
         'admin/platos' => 'AdminController#showDishes',
         'admin/plato' => 'AdminController#showDish',
         'admin/nuevo_plato' => 'AdminController#formNewDish',
@@ -27,7 +28,11 @@ class ConfigApp{
         'admin/categoria' => 'AdminController#showCategory',
         'admin/editar_categoria' => 'AdminController#editCategory',
         'admin/guardar_categoria' => 'AdminController#saveCategory',
-        'admin/borrar_categoria' => 'AdminController#deleteCategory'
+        'admin/borrar_categoria' => 'AdminController#deleteCategory',
+        'user_verify' => 'UserController#validateUser',
+        'new_user' => 'UserController#formNewUser',
+        'add_user' => 'UserController#addUser',
+        'user_logout' => 'UserController#logout'
     ];
 }
 ?>

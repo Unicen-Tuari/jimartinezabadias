@@ -17,7 +17,6 @@ $urlData = parceURL($_GET[ConfigApp::$ACTION]);
 
 $actionName = $urlData[ConfigApp::$ACTION];
 
-
 if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     
     $params = $urlData[ConfigApp::$PARAMS];

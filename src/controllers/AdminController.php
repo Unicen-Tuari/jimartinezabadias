@@ -11,6 +11,19 @@ class AdminController{
     function __construct(){
         $this->view = new AdminView();
         $this->model = new AdminModel();
+
+        session_start();
+
+        if(!isset($_SESSION["username"])){
+          header("Location: admin");
+          die();
+        }else{
+          if ( isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 100)) { 
+            header("Location: ../user_logout");
+            die();
+          } 
+          $_SESSION['LAST_ACTIVITY'] = time();
+        }
     }
 
     function showIndex(){
