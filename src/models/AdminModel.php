@@ -99,5 +99,15 @@ class AdminModel {
         $sentence->execute([$id_category]);
     }
 
+    function Menu(){
+        $sentence = $this->db->prepare(
+            "select d.*,c.name category_name
+            from dish d
+                join category c on (d.id_category = c.id_category)
+            where d.in_menu =" . $this->db->quote('P'));
+        $sentence->execute();
+        return $sentence->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }
 ?>

@@ -10,8 +10,9 @@ class AdminView{
         $this->smarty = new Smarty;
     }
 
-    function Index(){
-        $this->smarty->display('src/views/templates/adminIndex.tpl');
+    function Index($menu){
+        $this->smarty->assign('menu',$menu);
+        $this->smarty->display('src/views/templates/adminMenu.tpl');
     }
 
     function Dishes($dishes){

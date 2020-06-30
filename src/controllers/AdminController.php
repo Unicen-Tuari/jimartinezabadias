@@ -14,7 +14,8 @@ class AdminController{
     }
 
     function showIndex(){
-        $this->view->Index();
+        $menu = $this->model->Menu();
+        $this->view->Index($menu);
     }
 
     function showDishes(){

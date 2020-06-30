@@ -7,7 +7,7 @@
             <h3>Platos</h3>
         </div>
         <div class="col-5">
-            <a class="btn btn-info" href="admin/nuevo_plato" role="button">Nuevo Plato</a>
+            <a class="btn btn-info" href="admin/nuevo_plato" role="button">Nuevo plato</a>
         </div>
     </div>
 
