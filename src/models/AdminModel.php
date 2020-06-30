@@ -85,5 +85,19 @@ class AdminModel {
         return $sentence->fetch(PDO::FETCH_ASSOC);
     }
 
+    function updateCategory($id_category, $category_name, $description){
+        $sentence = $this->db->prepare(
+            "update category
+            set name = ?, description = ?
+            where id_category = ?");
+        $sentence->execute([$category_name, $description, $id_category]);
+    }
+
+    function deleteCategory($id_category){
+        $sentence = $this->db->prepare(
+            "delete from category where id_category = ?");
+        $sentence->execute([$id_category]);
+    }
+
 }
 ?>

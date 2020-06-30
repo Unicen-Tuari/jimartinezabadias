@@ -91,15 +91,25 @@ class AdminController{
     }
 
     function editCategory($params){
-        $cod_category = $params[0];
+        $id_category = $params[0];
         $category = $this->model->Category($id_category);
         $this->view->formEditCategory($category);
     }
 
-    // Helpers
-    private function splitDishId($dish_url){
-        return explode('_',$dish_url);
+    function saveCategory(){
+        $this->model->updateCategory(
+            $_GET["id_category"],
+            $_GET["category_name"],
+            $_GET["description"]);
+        header("Location: categorias");
     }
+
+    function deleteCategory($params){
+        $id_category = $params[0];
+        $this->model->deleteCategory($id_category);
+        header("Location: ../categorias");
+    }
+    
 }
 
 ?>
