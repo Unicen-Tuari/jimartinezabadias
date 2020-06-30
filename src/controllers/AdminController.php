@@ -19,7 +19,7 @@ class AdminController{
           die();
         }else{
           if ( isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 100)) { 
-            header("Location: ../user_logout");
+            header("Location: user_logout");
             die();
           } 
           $_SESSION['LAST_ACTIVITY'] = time();
@@ -61,7 +61,7 @@ class AdminController{
             $_GET["description"], 
             $_GET["price"],
             $_GET["in_menu"]);
-        header("Location: platos");
+        header("Location: admin_platos");
     }
 
     function saveDish(){
@@ -73,13 +73,13 @@ class AdminController{
             $_GET["description"], 
             $_GET["price"],
             $_GET["in_menu"]);
-        header("Location: platos");
+        header("Location: admin_platos");
     }
 
     function deleteDish($params){
         $id_dish = $params[0];
         $this->model->deleteDish($id_dish);
-        header("Location: ../platos");
+        header("Location: ../admin_platos");
     }
 
     function showCategories(){
@@ -95,7 +95,7 @@ class AdminController{
         $this->model->insertCategory(
             $_GET["category_name"],
             $_GET["description"]);
-        header("Location: categorias");
+        header("Location: admin_categorias");
     }
 
     function showCategory($params){
@@ -115,13 +115,13 @@ class AdminController{
             $_GET["id_category"],
             $_GET["category_name"],
             $_GET["description"]);
-        header("Location: categorias");
+        header("Location: admin_categorias");
     }
 
     function deleteCategory($params){
         $id_category = $params[0];
         $this->model->deleteCategory($id_category);
-        header("Location: ../categorias");
+        header("Location: ../admin_categorias");
     }
     
 }

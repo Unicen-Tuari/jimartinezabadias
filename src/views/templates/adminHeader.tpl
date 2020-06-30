@@ -28,10 +28,10 @@
                     <a class="nav-link" href="admin_menu">Menú <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="admin/platos">Platos</a>
+                    <a class="nav-link" href="admin_platos">Platos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="admin/categorias">Categorias</a>
+                    <a class="nav-link" href="admin_categorias">Categorias</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="user_logout">Cerrar Sesion</a>

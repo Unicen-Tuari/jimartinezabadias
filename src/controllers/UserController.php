@@ -41,7 +41,7 @@ class UserController
         $username = $_POST["username"];
         $password = $_POST["password"];
         $this->userModel->addUser($username, $password);
-        header("Location: admin/menu");
+        header("Location: admin_menu");
       }
 
       function logout(){

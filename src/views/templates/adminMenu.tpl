@@ -6,10 +6,6 @@
         <div class="col-3">
             <h3>Menú</h3>
         </div>
-        {* <div class="col-9">
-            <a class="btn btn-info" href="admin/nueva_categoria" role="button">Nueva cat.</a>
-            <a class="btn btn-info" href="admin/nuevo_plato" role="button">Nuevo plato</a>
-        </div> *}
     </div>
 
     <div class="row">
@@ -28,7 +24,7 @@
                         <tr>
                             <td>{$dish['category_name']}</td>
                             <td>
-                                <a href="admin/plato/{$dish['id_dish']}">
+                                <a href="admin_plato/{$dish['id_dish']}">
                                     {$dish['dish_name']}
                                 </a>
                             </td>

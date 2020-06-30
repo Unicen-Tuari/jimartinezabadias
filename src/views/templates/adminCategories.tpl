@@ -7,7 +7,7 @@
             <h3>Categorías</h3>
         </div>
         <div class="col-5">
-            <a class="btn btn-info" href="admin/nueva_categoria" role="button">Nueva cat.</a>
+            <a class="btn btn-info" href="admin_nueva_categoria" role="button">Nueva cat.</a>
         </div>
     </div>
 
@@ -25,7 +25,7 @@
                         {foreach from=$categories item=category}
                         <tr>
                             <td>
-                                <a href="admin/categoria/{$category['id_category']}">
+                                <a href="admin_categoria/{$category['id_category']}">
                                     {$category['name']}
                                 </a>
                             </td>

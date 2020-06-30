@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col">
             
-            <form action="admin/guardar_plato" method="GET">
+            <form action="admin_guardar_plato" method="GET">
 
                  <input type="hidden" id="id_dish" name="id_dish" value="{$dish['id_dish']}">
                  <input type="hidden" id="id_category" name="id_category" value="{$dish['id_category']}">
@@ -74,7 +74,7 @@
                 
                 <div class="form-group py-1">
                     <input class="btn btn-primary" type="submit" value="Guardar">
-                    <a class="btn btn-secondary" href="admin/plato/{$dish['id_dish']}">Cancelar</a>
+                    <a class="btn btn-secondary" href="admin_plato/{$dish['id_dish']}">Cancelar</a>
                 </div>
 
             </form>

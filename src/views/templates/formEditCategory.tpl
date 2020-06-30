@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col">
             
-            <form action="admin/guardar_categoria" method="GET">
+            <form action="admin_guardar_categoria" method="GET">
                 
                 <input type="hidden" id="id_category" name="id_category" value="{$category['id_category']}">
 
@@ -29,7 +29,7 @@
                 
                 <div class="form-group py-1">
                     <input class="btn btn-primary" type="submit" value="Agregar">
-                    <a class="btn btn-secondary" href="admin/categorias">Cancelar</a>
+                    <a class="btn btn-secondary" href="admin_categorias">Cancelar</a>
                 </div>
 
             </form>

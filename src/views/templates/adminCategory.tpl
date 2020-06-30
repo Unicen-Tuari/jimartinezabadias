@@ -24,10 +24,10 @@
     <div class="row">
         <div class="col">
             <a class="btn btn-primary" 
-                href="admin/editar_categoria/{$category['id_category']}" role="button">Editar</a>
+                href="admin_editar_categoria/{$category['id_category']}" role="button">Editar</a>
             <a class="btn btn-danger"
-                href="admin/borrar_categoria/{$category['id_category']}" role="button">Borrar</a>
-            <a class="btn btn-secondary" href="admin/categorias">Volver</a>
+                href="admin_borrar_categoria/{$category['id_category']}" role="button">Borrar</a>
+            <a class="btn btn-secondary" href="admin_categorias">Volver</a>
         </div>
     </div>
 

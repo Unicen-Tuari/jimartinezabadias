@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col">
             
-            <form action="admin/agregar_plato" method="GET">
+            <form action="admin_agregar_plato" method="GET">
                 <div class="form-group">
                     <label for="dish_name">Nombre</label>
                     <input type="text" class="form-control" id="dish_name" name="dish_name" placeholder="Nombre" required>
@@ -58,7 +58,7 @@
                 
                 <div class="form-group py-1">
                     <input class="btn btn-primary" type="submit" value="Agregar">
-                    <a class="btn btn-secondary" href="admin/platos">Cancelar</a>
+                    <a class="btn btn-secondary" href="admin_platos">Cancelar</a>
                 </div>
 
             </form>

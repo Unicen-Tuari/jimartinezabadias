@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col">
             
-            <form action="admin/agregar_categoria" method="GET">
+            <form action="admin_agregar_categoria" method="GET">
                 
                 <div class="form-group">
                     <label for="category_name">Nombre</label>
@@ -27,7 +27,7 @@
                 
                 <div class="form-group py-1">
                     <input class="btn btn-primary" type="submit" value="Agregar">
-                    <a class="btn btn-secondary" href="admin/categorias">Cancelar</a>
+                    <a class="btn btn-secondary" href="admin_categorias">Cancelar</a>
                 </div>
 
             </form>

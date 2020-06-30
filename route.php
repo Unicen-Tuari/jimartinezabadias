@@ -22,10 +22,10 @@ if(array_key_exists($actionName, ConfigApp::$ACTIONS)){
     $params = $urlData[ConfigApp::$PARAMS];
     $accion = ConfigApp::$ACTIONS[$actionName];
 
-    if(array_key_exists($actionName . "/" . $params[0], ConfigApp::$ACTIONS)){
-        $accion = ConfigApp::$ACTIONS[$actionName . "/" . $params[0]];
-        $params = array_slice($params,1);
-    }
+    // if(array_key_exists($actionName . "/" . $params[0], ConfigApp::$ACTIONS)){
+    //     $accion = ConfigApp::$ACTIONS[$actionName . "/" . $params[0]];
+    //     $params = array_slice($params,1);
+    // }
 
     $controllerMetodo = explode('#', $accion);
     include_once "src/controllers/" . $controllerMetodo[0] . ".php";
