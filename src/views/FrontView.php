@@ -11,31 +11,27 @@ class FrontView{
     }
 
     function Index(){
-        // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/frontIndex.tpl');
 
     }
 
-    function Menu(){
-        // $this->smarty->assign('task',$task);
+    function Menu($categories,$dishes){
+        $this->smarty->assign('categories',$categories);
+        $this->smarty->assign('dishes',$dishes);
         $this->smarty->display('src/views/templates/frontMenu.tpl');
-
     }
 
     function Events(){
-        // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/frontEvents.tpl');
 
     }
     
     function About(){
-        // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/frontAbout.tpl');
         
     }
     
     function Contact(){
-        // $this->smarty->assign('task',$task);
         $this->smarty->display('src/views/templates/frontContact.tpl');
 
     }

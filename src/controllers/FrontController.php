@@ -1,39 +1,37 @@
 <?php
 
 require_once "src/views/FrontView.php";
+require_once "src/models/AdminModel.php";
 
 class FrontController{
 
     private $view;
-    // private $model;
+    private $model;
 
     function __construct(){
         $this->view = new FrontView();
-        // $this->model = new TaskModel();
+        $this->model = new AdminModel();
     }
 
     function showIndex(){
-        // echo include_once "src/views/index.html";
         $this->view->Index();
     }
 
     function showMenu(){
-        // echo include_once "src/views/menu.html";
-        $this->view->Menu();
+        $categories = $this->model->Categories();
+        $dishes = $this->model->Menu();
+        $this->view->Menu($categories, $dishes);
     }
 
     function showEvents(){
-        // echo include_once "src/views/menu.html";
         $this->view->Events();
     }
 
     function showAbout(){
-        // echo include_once "src/views/menu.html";
         $this->view->About();
     }
 
     function showContact(){
-        // echo include_once "src/views/menu.html";
         $this->view->Contact();
     }
 

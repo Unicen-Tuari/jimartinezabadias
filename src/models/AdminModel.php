@@ -64,7 +64,7 @@ class AdminModel {
 
     function Categories(){
         $sentence = $this->db->prepare(
-            "select * from category c");
+            "select c.* from category c");
         $sentence->execute();
         return $sentence->fetchAll(PDO::FETCH_ASSOC);
     }
