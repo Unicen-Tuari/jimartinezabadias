@@ -104,7 +104,7 @@ class AdminModel {
             "select d.*,c.name category_name
             from dish d
                 join category c on (d.id_category = c.id_category)
-            where d.in_menu =" . $this->db->quote('P'));
+            where d.in_menu = 'P'");
         $sentence->execute();
         return $sentence->fetchAll(PDO::FETCH_ASSOC);
     }
