@@ -2,40 +2,45 @@
 
     <div class="main">
 
-        {foreach from=$categories item=category}
-
-            <section class="section">
+        {foreach from=$menu item=category}
+            
+            {if $category['dishes']|@count gt 0}
                 
-                <h2 class="section-main-title">
-                    {$category['name']}
-                </h2>
+                <section class="section">
                 
-                <div class="section-body">
+                    <h3 class="section-main-title">
+                        {$category['name']}
+                    </h3>
+                    
+                    <div class="section-body">
 
-                    <table>
+                        <table style="margin:0;">
 
-                        <tbody>
+                            <tbody>
 
-                            {foreach from=$dishes item=dish}
-                                {if $dish['id_category'] eq $category['id_category']}
-                                    <tr>
-                                        <td class="dish-name">
-                                            {$dish['dish_name']}
-                                        </td>
-                                        <td>$ {$dish['price']}</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="dish-info">{$dish['description']}</td>
-                                    </tr>
-                                {/if}
-                            {/foreach}
+                                {foreach from=$category['dishes'] item=dish}
+                                    {if $dish['id_category'] eq $category['id_category']}
+                                        <tr>
+                                            <td class="dish-name">
+                                                {$dish['dish_name']}
+                                            </td>
+                                            <td>$ {$dish['price']}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dish-info">{$dish['description']}</td>
+                                        </tr>
+                                    {/if}
+                                {/foreach}
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
 
-                </div>
+                    </div>
 
-            </section>
+                </section>
+
+            {/if}
+
         {/foreach}
 
     </div>

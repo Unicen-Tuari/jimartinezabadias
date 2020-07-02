@@ -7,22 +7,22 @@ class UserController
 // extends SecureController
 {
 
-    private $userModel;
-    private $userView;
+    private $UserModel;
+    private $UserView;
     
     function __construct(){
-        $this->userModel = new UserModel();
-        $this->userView = new  UserView();
+        $this->UserModel = new UserModel();
+        $this->UserView = new  UserView();
     }
 
-    function login(){
-        $this->userView->Login();
+    function showLogin(){
+        $this->UserView->Login();
     }
 
     function validateUser(){
         $username = $_POST['username'];
         $password = $_POST['password'];
-        $user = $this->userModel->getUser($username);
+        $user = $this->UserModel->getUser($username);
         if (password_verify($password, $user['password'])){
             session_start();
             $_SESSION['username'] = $user['username'];
@@ -33,22 +33,21 @@ class UserController
     }
 
     function formNewUser(){
-        return $this->userView->formNewUser();
+        return $this->UserView->formNewUser();
     }
 
     function addUser(){
-
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $this->userModel->addUser($username, $password);
+        $this->UserModel->addUser($username, $password);
         header("Location: admin_menu");
-      }
+    }
 
-      function logout(){
+    function logout(){
         session_start();
         session_destroy();
         header("Location: admin");
-      }
+    }
 
 
 }

@@ -1,38 +1,41 @@
 <?php
 
 require_once "src/views/FrontView.php";
-require_once "src/models/AdminModel.php";
+require_once "src/models/DishModel.php";
+require_once "src/models/CategoryModel.php";
 
 class FrontController{
 
-    private $view;
-    private $model;
+    private $FrontView;
+    private $DishModel;
+    private $CategoryModel;
 
     function __construct(){
-        $this->view = new FrontView();
-        $this->model = new AdminModel();
+        $this->FrontView = new FrontView();
+        $this->DishModel = new DishModel();
+        $this->CategoryModel = new CategoryModel();
     }
 
     function showIndex(){
-        $this->view->Index();
+        $this->FrontView->Index();
     }
 
     function showMenu(){
-        $categories = $this->model->Categories();
-        $dishes = $this->model->Menu();
-        $this->view->Menu($categories, $dishes);
+        $categories = $this->CategoryModel->Categories();
+        $dishes = $this->DishModel->Dishes();
+        $this->FrontView->Menu($categories, $dishes);
     }
 
     function showEvents(){
-        $this->view->Events();
+        $this->FrontView->Events();
     }
 
     function showAbout(){
-        $this->view->About();
+        $this->FrontView->About();
     }
 
     function showContact(){
-        $this->view->Contact();
+        $this->FrontView->Contact();
     }
 
 }
