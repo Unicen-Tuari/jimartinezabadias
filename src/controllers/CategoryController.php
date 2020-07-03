@@ -18,7 +18,7 @@ class CategoryController{
           header("Location: admin");
           die();
         }else{
-          if ( isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 100)) { 
+          if ( isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1000)) { 
             header("Location: user_logout");
             die();
           } 

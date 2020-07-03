@@ -1,6 +1,6 @@
 {include file="src/views/templates/frontHeader.tpl"}
 
-    <div class="main">
+    <div class="main main-category">
 
         {foreach from=$menu item=category}
             
@@ -8,7 +8,7 @@
                 
                 <section class="section">
                 
-                    <h3 class="section-main-title">
+                    <h3 class="section-main-title category-title">
                         {$category['name']}
                     </h3>
                     

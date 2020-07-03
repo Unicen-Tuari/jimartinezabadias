@@ -261,7 +261,8 @@ nav li{
     width: 100%;
 }
 .section-main-title{
-    padding: 24px 0px;
+    margin: 0px;
+    padding: 36px 0px;
 }
 .event-description{
     text-align: left;
@@ -269,4 +270,16 @@ nav li{
 }
 .table-item{
     color: #164341;
+}
+
+.category-title::after{
+    content: "";
+    display: block;
+    margin: 36px 56px 0px 56px;
+    border: 1px solid #FFC107;
+    border-radius: 50%;
+}
+
+.main-category{
+    padding-top: 120px;
 }
